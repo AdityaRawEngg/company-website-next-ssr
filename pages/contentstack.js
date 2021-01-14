@@ -15,7 +15,7 @@ export default function CS({ data }) {
   );
 }
 
-export async function getServerSideProps() {
+export async function getStaticProps() {
   const res = await fetch("http://localhost:3000/api/cs?company=raw");
   const data = await res.json();
   return { props: { data } };
