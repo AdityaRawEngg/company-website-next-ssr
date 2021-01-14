@@ -15,7 +15,7 @@ export default function Raw({ data }) {
   );
 }
 export async function getStaticProps() {
-  const res = await fetch("http://localhost:3000/api/raw");
+  const res = await fetch("https://blogs-json.herokuapp.com/raw");
   const data = await res.json();
-  return { props: { data } };
+  return { props: { ...data } };
 }

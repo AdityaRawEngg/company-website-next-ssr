@@ -15,7 +15,7 @@ export default function Surfboard({ data }) {
   );
 }
 export async function getStaticProps() {
-  const res = await fetch("http://localhost:3000/api/sb");
+  const res = await fetch("https://blogs-json.herokuapp.com/surfboard");
   const data = await res.json();
-  return { props: { data } };
+  return { props: { ...data } };
 }
