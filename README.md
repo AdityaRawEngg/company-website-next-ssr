@@ -10,6 +10,34 @@ All the pages receives a data prop which contains JSON data of that page which i
 
 Data is fetch from a nodeJs server hosted on [Heroku](https://heroku.com).
 
+## Downloading and running project
+
+1. Clone the repository run
+
+```
+git clone https://github.com/AdityaRawEngg/company-website-next-ssr.git
+```
+
+2. After downloading finishes run `cd company-website-next-ssr`
+
+3. Once inside directory run
+
+```
+npm run build
+```
+
+4. Once build file is created run
+
+```
+npm run start
+```
+
+To run project in development mode run
+
+```
+npm run dev
+```
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
